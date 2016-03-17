@@ -10,7 +10,8 @@
     <link rel="stylesheet" type="text/css" href="<%= file %>" /><% }); %>
 
     <!-- compiled JavaScript --><% scripts.forEach( function ( file ) { %>
-    <script type="text/javascript" src="<%= file %>"></script><% }); %>
+    <script type="text/javascript" src="<%= file %>"></script>
+    <script src="component/instafeed.js/instafeed.min.js"></script><% }); %>
 </head>
 <body>
     <header>
@@ -30,9 +31,5 @@
     </header>
 
     <div class="container" ui-view="main"></div>
-
-    <footer class="container">
-        (c) <%= date %> <%= author %>
-    </footer>
 </body>
 </html>
