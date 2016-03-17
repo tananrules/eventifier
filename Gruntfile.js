@@ -83,7 +83,9 @@ module.exports = function(grunt) {
                 'vendor/placeholders/angular-placeholders-0.0.1-SNAPSHOT.min.js',
                 'vendor/angular-ui-router/release/angular-ui-router.js',
                 'vendor/angular-ui-utils/modules/route/route.js',
-                'vendor/instafeed.js/instafeed.min.js'
+                'vendor/instafeed.js/instafeed.min.js',
+                'vendor/masonry/dist/masonry.pkgd.js',
+                'vendor/imagesloaded/imagesloaded.pkgd.js'
             ],
             css: [
             ],
