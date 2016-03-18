@@ -19,19 +19,22 @@
             accessToken: '6678174.467ede5.205a03ebc4b74d4082823781c3149575',
             target: 'instafeed',
             sortBy: 'most-recent',
-            limit: 33,
+            limit: 50,
             resolution: 'low_resolution',
             template: '<div class="item"><img src="{{image}}"/></div>',
           
           after: function() {
             var elem = document.querySelector('#instafeed');
 
-            var msnry; 
+            var msnry;
+
+            for(var i=0; i<elem.children.length; i++) {
+              elem.children[i].children[0].width = Math.floor(Math.random() * 3 + 1) * 100; 
+            }
 
             imagesLoaded(elem, function() {
               msnry = new Masonry(elem, {
-                itemSelector: '.item',
-                columnWidth: 320,
+                itemSelector: '.item'
               });
             });
           }
