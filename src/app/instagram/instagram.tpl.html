@@ -10,6 +10,25 @@
   
   <button ng-click="model.searchTag(model.search)" ng-enter="search" class="btn btn-warning" value="Submit">Search</button>    
   
-  <div id='instafeed' style="margin-top: 20px;">
-  </div>  
+  <div class="col-md-6">
+    <ul class="grid" style="margin-top: 20px;">
+      <li class="grid-item" ng-repeat="item in model.data">
+          <img src="" ng-src="{{item.images.thumbnail.url}}">
+      </li>
+    </ul> 
+  </div> 
+
+  <div class="col-md-6" style="margin-top: 20px;">
+    <div class="row">
+      <div class="col-md-12">
+        <div data-ac-chart="'bar'" data-ac-data="model.chartdata" data-ac-config="model.barconfig" class="chart" id="chart" style="height: 300px; width: 100%">
+        </div>
+      </div>
+
+      <div class="col-md-12">
+        <div data-ac-chart="'pie'" data-ac-data="model.chartdata" data-ac-config="model.pieconfig" class="chart" id="chart" style="height: 300px; width: 100%">
+        </div>
+      </div>
+    </div>
+  </div>
 </div>

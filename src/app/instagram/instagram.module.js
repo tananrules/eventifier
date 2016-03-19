@@ -14,5 +14,7 @@
     });
 
 }(angular.module("eventifier.instagram", [
-    'ui.router'
+    'ui.router',
+    'gridshore.c3js.chart',
+    'angularCharts'
 ])));

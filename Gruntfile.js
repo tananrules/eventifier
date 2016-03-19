@@ -85,7 +85,12 @@ module.exports = function(grunt) {
                 'vendor/angular-ui-utils/modules/route/route.js',
                 'vendor/instafeed.js/instafeed.min.js',
                 'vendor/masonry/dist/masonry.pkgd.js',
-                'vendor/imagesloaded/imagesloaded.pkgd.js'
+                'vendor/imagesloaded/imagesloaded.pkgd.js',
+                'vendor/angular-charts/dist/angular-charts.min.js',
+                'vendor/c3-angular/c3-angular.min.js',
+                'vendor/c3/c3.min.css',
+                'vendor/c3/c3.min.js',
+                'vendor/d3/d3.min.js',
             ],
             css: [
             ],
