@@ -11,7 +11,7 @@
   <button ng-click="model.searchTag(model.search)" ng-enter="search" class="btn btn-warning" value="Submit">Search</button>    
   
   <div class="col-md-6">
-    <ul class="grid" style="margin-top: 20px;">
+    <ul class="grid" style="margin-top: 20px; list-style-type: none;">
       <li class="grid-item" ng-repeat="item in model.data">
           <img src="" ng-src="{{item.images.thumbnail.url}}">
       </li>

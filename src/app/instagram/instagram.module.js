@@ -16,5 +16,5 @@
 }(angular.module("eventifier.instagram", [
     'ui.router',
     'gridshore.c3js.chart',
-    'angularCharts'
+    'angularCharts',
 ])));

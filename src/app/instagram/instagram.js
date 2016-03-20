@@ -21,9 +21,8 @@
   }]);
 
   app.controller('InstagramController', function ($scope, InstagramAPI) {
-    
     var model = this;
-    
+    var msnry;
 
     var loadInstagram = function(tagName) {
       
@@ -41,6 +40,16 @@
             tooltip: response.data[i].user.username
           });
         }
+
+        // for(i=0; i<document.querySelector('.grid').children.length; i++) {
+        //   document.querySelector('.grid').children[i].children[0].style.width = (Math.floor(Math.random() * 3 + 1)) * 100; 
+        // }
+
+        imagesLoaded(document.querySelector('.grid'), function() {
+          msnry = new Masonry(document.querySelector('.grid'), {
+            itemSelector: '.grid-item'
+          });
+        });
       });
     };
 
