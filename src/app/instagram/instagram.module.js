@@ -17,4 +17,6 @@
     'ui.router',
     'gridshore.c3js.chart',
     'angularCharts',
+    'masonry.directives'
+    // 'ng-gate8-masonry'
 ])));
