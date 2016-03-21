@@ -8,7 +8,13 @@
                 $timeout(function () {
                     var masonry;
                     var parent = element.parent();
+                    
                     imagesLoaded(parent, function() {
+
+                        for(var i=0; i<parent[0].children.length; i++) {
+                           parent[0].children[i].children[0].style.width = (Math.floor(Math.random() * 3 + 1) * 100).toString() + "px"; 
+                        }
+
                         masonry = new Masonry(parent[0], {
                             itemSelector: '.grid-item',
                             isAnimated: true,
